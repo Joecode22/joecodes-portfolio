@@ -1,0 +1,335 @@
+/* Improved color scheme variables */
+:root {
+  --deep-jungle-green: #004d40;
+  --lush-green: #2e7d32;
+  --vibrant-white: #ffffff;
+  --vibrant-blue: rgba(28, 59, 184, 0.763);
+  --earthy-brown: #5d4037;
+  --bright-orange: #f57c00;
+  --vivid-pink: #c2185b;
+  --light-background: #f0f0f0; /* Added a lighter background color */
+}
+
+/* Import a custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Added box-sizing to handle padding and border */
+}
+
+body {
+  background-color: var(--deep-jungle-green);
+  font-family: 'Roboto', Arial, sans-serif; /* Changed to custom font */
+  color: var(--vibrant-white);
+  line-height: 1.6; /* Improved line-height for better readability */
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--vibrant-white);
+  font-size: 2rem;
+  background-color: rgba(31, 152, 104, 0.65);
+  /* Choose color */
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 10px;
+  color: var(--vibrant-white);
+  padding: 0.5vw;
+  border-bottom: 3px solid var(--vibrant-white);
+
+}
+
+nav a:hover {
+  color: var(--vibrant-white);
+  background-color: var(--vibrant-blue);
+  padding: 1vw;
+  border-radius: 1vw;
+  border-bottom: none;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 0;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-right: 5vw;
+  color: var(--vibrant-white);
+  border-bottom: 3px ridge var(--vibrant-white);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.header-hero-container {
+  background-image: url('../images/forest-road-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* styling for image */
+.avatar {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--vibrant-blue);
+  margin-left: 5vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* About section */
+#about,
+#contact,
+#work {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#about p {
+  width: 100%;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-left: solid 5px var(--earthy-brown);
+  height: 10vw;
+  font-size: 2rem;
+  padding-left: 2vw;
+}
+
+/* work section and projects styling */
+#work {
+  display: flex;
+  align-items: flex-start;
+}
+
+#about h2,
+#work h2,
+#contact h2 {
+  font-size: 3rem;
+  margin-top: 1vw;
+  width: 15vw;
+  text-align: end;
+  padding-right: 2vw;
+  ;
+}
+
+
+
+
+/* Contact section */
+#contact {
+  display: flex;
+  align-items: center;
+  color: var(--vibrant-white);
+  height: 10vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: var(--vibrant-white);
+  font-weight: 900;
+}
+
+#contact h2 {
+  font-size: 3rem;
+  margin-top: 1vw;
+}
+
+#contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  list-style: none;
+  border-left: solid 5px var(--earthy-brown);
+  height: 100%;
+}
+
+#contact li a {
+  font-size: 2rem;
+  color: var(--vibrant-white);
+  border-bottom: ridge 3px var(--vibrant-white);
+}
+
+#contact li a:hover {
+  color: var(--vibrant-white);
+  background-color: var(--vibrant-blue);
+  padding: 1vw;
+  border-radius: 1vw;
+  border-bottom: none;
+}
+
+/* grid layout for projects */
+.projects {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.project {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.project h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.project p {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.project-large {
+  grid-column: span 2;
+  /* grid-row: span 1; */
+}
+
+.projects-container {
+  border-left: solid 5px var(--earthy-brown);
+  padding-left: 2vw;
+  padding-top: 1rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background-color: rgba(31, 152, 104, 0.65);
+  height: 5vh;
+}
+
+.img-hover {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Apply the hover effect to the image */
+.img-hover img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover:hover img {
+  transform: scale(1.06); /* Adjust the scale value to change the pop out effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjust the box-shadow to create more or less depth */
+}
+
+/* media query for mobile responsiveness */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px; /* Reduce the base font size */
+  }
+
+  h1, h2, h3 {
+    font-size: 24px; /* Adjust heading font sizes */
+  }
+
+  /* Adjust the nav links to be more mobile-friendly */
+  nav a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* Adjust the grid layout for projects */
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Additional styles */
+  html {
+    font-size: 56.25%; /* 1rem is now 9px */
+  }
+
+  /* Adjust the hero section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    margin-right: 0;
+  }
+
+  .avatar {
+    margin-left: 0;
+  }
+
+  /* Adjust the about, work, and contact sections */
+  #about, #contact, #work {
+    flex-direction: column;
+  }
+
+  #about h2, #work h2, #contact h2 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #about p {
+    height: auto;
+    padding-left: 1rem;
+  }
+
+  #contact ul {
+    width: 100%;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+/* Adjusting section spacing */
+section {
+  padding: 5rem 0;
+}
+
+/* Adding smooth scrolling effect */
+html {
+  scroll-behavior: smooth;
+}
+
